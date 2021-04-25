@@ -36,3 +36,14 @@ See the documentation on [setting options](commands.md#setting-global-options) f
   See the [styling guide](styling.md#top-bar) for information on how to configure the top bar.
 
   The default value is `"|$shortname $version||;${tag|artist} - ${tag|title}||${tag|album}, ${tag|year};$volume $mode $elapsed ${state} $time;|[${list|index}/${list|total}] ${list|title}||;;"`.
+
+### Playback mode
+
+* `set consume`
+* `set random`
+* `set single`
+* `set repeat`
+
+  Set the playback mode. The mode can be toggled off or inverted, e.g. `set norandom`, `set invrandom`.
+
+  See [here](https://musicpd.org/doc/protocol/playback_option_commands.html) for more information on the different modes.

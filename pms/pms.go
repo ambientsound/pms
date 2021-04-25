@@ -389,6 +389,11 @@ func (pms *PMS) UpdatePlayerStatus() error {
 
 	pms.database.SetPlayerStatus(status)
 
+	pms.Options.Get("consume").Set(attrs["consume"])
+	pms.Options.Get("random").Set(attrs["random"])
+	pms.Options.Get("repeat").Set(attrs["repeat"])
+	pms.Options.Get("single").Set(attrs["single"])
+
 	return nil
 }
 

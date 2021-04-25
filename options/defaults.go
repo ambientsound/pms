@@ -7,6 +7,11 @@ func (o *Options) AddDefaultOptions() {
 	o.Add(NewStringOption("columns"))
 	o.Add(NewStringOption("sort"))
 	o.Add(NewStringOption("topbar"))
+
+	o.Add(NewBoolOption("consume"))
+	o.Add(NewBoolOption("random"))
+	o.Add(NewBoolOption("single"))
+	o.Add(NewBoolOption("repeat"))
 }
 
 // Defaults is the default, internal configuration file.
