@@ -19,8 +19,8 @@ var buildVersion = "undefined"
 type cliOptions struct {
 	Version     bool   `short:"v" long:"version" description:"Print program version"`
 	Debug       string `short:"d" long:"debug" description:"Write debugging info to file"`
-	MpdHost     string `long:"host" description:"MPD host" default-mask:"MPD_HOST environment variable or localhost"`
-	MpdPort     string `long:"port" description:"MPD port" default-mask:"MPD_PORT environment variable or 6600"`
+	MpdHost     string `short:"h" long:"host" description:"MPD host" default-mask:"MPD_HOST environment variable or localhost"`
+	MpdPort     string `short:"p" long:"port" description:"MPD port" default-mask:"MPD_PORT environment variable or 6600"`
 	MpdPassword string `long:"password" description:"MPD password"`
 }
 
